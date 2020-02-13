@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700,900&subset=cyrillic");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i&subset=cyrillic');
+
+@keyframes header_anim 
+{
+  from 
+  {
+    transform: translateX(-120%);
+  }
+  to 
+  {
+    transform: translateX(0);
+  }
+}
+
+body 
+{ background-color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+
+.header_title 
+{
+  transform: translateX(0);
+  animation-name: header_anim;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in;
+  color: #c2a0d2;
+  align-self: center;
+  padding: 8px 30px;
+  text-align: center;
+}
+/* Fonts */
+
+h1 
+{
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15em;
+  font-weight: 700;
+}
+
+h2 
+{ margin-top: 0%;
+   color: #c2a0d2;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+p 
+{
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+
+fieldset{
+  position: absolute;
+  float: center;
+  margin-top: 2%;
+  margin-left: 25%;
+  margin-right: 30%;
+  width: 40%;
+}
+
+article 
+{ margin-top: 0%;
+  background-image: url("back_game.jpg");
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  padding: 8px 50px;
+  text-align: center;
+                       
+ 
+ 
+}
+#mainContent p {
+  color: rgba(146,146,146,1.00);
+font-family: montserrat, sans-serif;
+font-style: normal;
+font-weight: 200;
+text-align: justify;
+}
+#mainContent h3 {
+font-family: montserrat, sans-serif;
+font-style: normal;
+font-weight: 200;
+color: rgba(146,146,146,1.00);
+}
+#mainContent table {
+  width: 40%;
+color: rgba(146,146,146,1.00);
+font-family: montserrat, sans-serif;
+font-style: normal;
+font-weight: 200;
+text-align: justify;
+}
+#mainContent table #col {
+text-align: center;
+}
+
+.canv
+{   margin: 1%;
+  align-self: center;
+  justify-content: space-around;
+  position: relative;
+  background-color: #fafeff;
+}
+
+.kolonka
+{ position: absolute; 
+  width:250px;
+  float:left;
+  margin-right: 1150px; 
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #eeeddc;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+}
+.buttonnext {
+  display: inline-block;
+  padding: 16px 32px;
+  background-color: #50c8ff;
+  color: #FFFFFF;
+  transition: all 0.3s ease-out;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  background-clip: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+
+
+.buttonnext:hover {
+  transition: all 0.37s ease-in;
+  transform: scale(1.12, 1.12);
+  opacity: 5;
+  border-radius: 12px;
+}
+
+
+.buttonnext1 {
+  width: 100%;
+  margin: 10px 5px 5px 0px;
+  display: inline-block;
+  padding: 35px;
+  background-color: #389dcce3;
+  color: #FFFFFF;
+  transition: all 0.3s ease-out;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  background-clip: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.buttonnext1:hover {
+  transition: all 0.37s ease-in;
+  transform: scale(1.2, 1.2);
+  opacity: 15;
+  border-radius: 20px;
+}
+
+.buttonback {
+  width: 100%;
+  margin: 40px 0px 5px 0px;
+  display: inline-block;
+  padding: 15px;
+  background-color: #3f88aaa6;
+  color: #FFFFFF;
+  transition: all 0.3s ease-out;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  background-clip: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.buttonback:hover {
+  transition: all 0.37s ease-in;
+  transform: scale(1.2, 1.2);
+  opacity: 35;
+  border-radius: 35px;
+}

@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+
+<title>Information Security </title>
+<link rel="stylesheet" href="style_main.css">
+
+<script type="text/javascript"> 
+
+var ids=["text_comment","text_comment2","com_name","com_name2"] 
+function localStore() 
+{ 
+
+for (var i = 0; i < ids.length; ++i) 
+{ 
+localStorage[ids[i]] = document.getElementById(ids[i]).value; 
+} 
+location.href='main.html'; 
+} 
+
+function localGet() 
+{ 
+for (var i = 0; i < ids.length; ++i) 
+{ 
+document.getElementById(ids[i]).value = localStorage[ids[i]]; 
+} 
+} 
+
+function local_clear() 
+{ 
+for (var i = 0; i < ids.length; ++i) 
+{ 
+document.getElementById(ids[i]).value = ""; 
+} 
+
+
+}
+</script>
+
+</head>
+
+<body>
+        <div id="headerMain">
+                <div id="header">
+
+        <nav class="nav four"> 
+<ul class="topmenu">
+<li>      <li><a class="a" href="main.html">Главная<i class="fa fa-angle-down"></i></a>
+    <ul class="submenu">
+    <li><a class="a" href="#about"> Об ИБ</a></li>
+    <li><a class="a" href="#parrot"> Parrot SecOS</a></li>
+    <li><a class="a" href="#kali">Kali linux</a></li>
+    </ul>
+</li>
+<li>    <a class="a" href="media.html" title="Медиа-контент">Медиа</a> <li>
+<li>    <a class="a" href="game.html" title="Играть">Игры</a><li>
+<li>    <a class="a" href="form1.html" title="Зарегестрироваться">Регистрация</a><li>
+</ul>
+    </nav>
+</div>
+</div>
+
+ <header class="header" > 
+        <h1      class="header_title"> 
+                <strong> Информационная безопасность  </strong>
+            </h1>
+      
+ </header>
+
+
+ <a name="about"> </a>
+    <section class="article" id="mainContent"> 
+   
+    <h2 > Об информационной безопасности </h2>
+    <p>Информационная безопасность — состояние сохранности информационных ресурсов и защищенности законных прав личности и общества в информационной сфере.</p>
+    <p>Информационная безопасность – это процесс обеспечения конфиденциальности, целостности и доступности информации.</p>
+	<p> 
+        <ul>
+            <li>   Конфиденциальность: Обеспечение доступа к информации только авторизованным пользователям. </li>
+            <li>   Целостность: Обеспечение достоверности и полноты информации и методов ее обработки.</li>
+            <li>   Доступность: Обеспечение доступа к информации и связанным с ней активам авторизованных пользователей по мере необходимости.</li>
+        </ul> 
+    </p>
+    </section>
+
+    <a name= "parrot"> </a>
+<section class="article"  id="mainContent"> 
+    <h2 >Parrot Sesurity OS</h2>
+    <div id="bannerImage"><img src="parrotos.jpg" alt="logo" width="640" height="360"/></div>
+        <p> Набирающий популярность security-дистрибутив, основанный на Debian-linux. Довольно простой в освоении, подходит и для новичков и для профессионалов. Этот дистрибутив нацелен как на проведение тестирования на проникновение, так и на анонимную работу в сети Интернет. 
+            <br> <br>
+                Довольно легкий и эффективный инструмент, многие security специалисты нашли в нем замену все более «прожорливому» Kali, тем более что Parrot использует репозитории Kali для обновления. Использует оболочку MATE и дисплей-менеджер LightDM.
+                <br> <br>
+                По фукнционалу он похож на Kali Linux, здесь тоже вместе с системой поставляется огромное количество специального программного обеспечения для тестирования безопасности.
+        </p>
+    <aside id="OSInfo"> 
+        <h3> Официальный сайт: <a margin-bottom=0px href="https://www.parrotsec.org/index.php" title="Parrot Sec. OS"><img src="logopos.png" alt="Off" width="28" height="28"></a> </h3>
+    </aside>
+
+	<form name="comment" method="post">
+        <p>
+            <label>Имя:</label>
+            <input class="form_input" type="text" id="com_name" placeholder="Ваше имя" />
+        </p>
+        <p>
+            <label>Комментарий:</label>
+            <br />
+            <textarea class= "form_textarea" id="text_comment" rows="5" placeholder="Ваше сообщение"></textarea>
+        </p>
+        <p>
+            <input type="hidden" name="page_id" value="151" />
+            <button class= " form_button" ><span><a href="main.html" onclick="localStore();"> Отправить </a></span></button>
+        </p>
+    </form>
+	
+</section>
+    
+<a name= "kali"> </a>
+<section class="article"  id="mainContent"> 
+        <h2 name= "kali">Kali Linux</h2>
+        <div id="bannerImage"><img src="kalilinux.png" alt="logo" width="640" height="360"/></div>
+            <p> Kali linux представляет из себя дистрибутив, содержащий множество утилит для проведения тестирования
+                 на проникновение — от анализа уязвимостей веб-приложений, до взлома сетей и сервисов и закрепления в системе.
+                 
+                <br> <br>
+                    Проект создали Мати Ахарони и Макс Мозер. 
+                    <br> <br>   
+                        Предназначен прежде всего для проведения тестов на безопасность.
+                        <br> <br>
+                            Наследник развивавшегося до 2013 года на базе Knoppix дистрибутива BackTrack.
+            </p>
+        <aside id="OSInfo"> 
+            <h3> Официальный сайт: <a margin-bottom=0px href="https://www.parrotsec.org/index.php" title="Kali Linux"><img src="logokali.png" alt="Off" width="46" height="28"></a> </h3>
+        </aside>
+    
+        <form name="comment" method="post">
+            <p>
+                <label>Имя:</label>
+                <input class="form_input" type="text" id="com_name" placeholder="Ваше имя" />
+            </p>
+            <p>
+                <label>Комментарий:</label>
+                <br />
+                <textarea class= "form_textarea" id="text_comment" rows="5" placeholder="Ваше сообщение"></textarea>
+            </p>
+            <p>
+                <input type="hidden" name="page_id" value="151" />
+                <button class= " form_button" ><span><a href="main.html" onclick="localStore();"> Отправить </a></span></button>
+            </p>
+        </form>
+        
+    </section>	
+	
+    <footer> 
+    
+    
+ 
+	
+</div>
+	<div>
+		<nav  id="footerbar" > 
+<a href="#top" title="Вернуться в начало страницы"> Начало</a> 
+<a href="#about" title="Вернуться к статье Об информационной безопасности"> Об информационной безопасности</a> 
+<a href="#parrot" title="Вернуться к статье Parrot Security OS"> Parrot Security OS</a>
+<a href="#kali" title="Вернуться к статье Kali Linux"> Kali Linux </a>
+
+	</nav>
+	</div>
+</div>
+</footer>
+</body>
+</html>

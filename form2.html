@@ -1,0 +1,31 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title> Prak4 </title>
+<link rel="stylesheet" href="style_form.css">
+
+</head>
+<body>
+  <article  >
+      <h3 >  Расскажи о себе,   </h3>    <h3 id="data">      </h3>  
+  
+      <form>
+    <p class="form" >
+    <p>Род деятельности:  <select id="prof" name="prof" size="1" class= "ssaniy_otstup">
+                            <option value="0">Студент</option>
+                            <option value="1">Магистр</option>
+                            <option value="2">Аспирант</option>
+                            <option value="3">Никто</option>
+                            </select> </p>
+                            
+  <p>Телефон: <input type="tel " id="tel" name="tel"  class= "ssaniy_otstup" autofocus   pattern="8[0-9]{10}"> </p>
+  <p>E-mail: <input type="email" id="email" class= "ssaniy_otstup "  > </p>
+<p    >Комментарий: <br> <textarea class="form_textarea "  id="comment"        placeholder="Ваше сообщение"></textarea> </p>
+  </p>
+  <script src="forms.js"></script>
+  <button class=" yes form_button"> <span><a href= "form3.html" >  Далее > </a></span> </button>     
+  <button class="no form_button">  <span><a href= "form1.html" > < Назад </a></span> </button>
+    </form>
+  </article>
+</body>
+</html>
